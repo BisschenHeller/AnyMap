@@ -1,0 +1,1 @@
+This is a file whose sole purpose is to make git happy about not having to clone an empty repository. Not long until this file is forever forgotten.
