@@ -1,0 +1,136 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>8</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>496</x><y>152</y><w>88</w><h>104</h></coordinates><panel_attributes>PointOfInterest
+-
+- POIType
+- POIStatus
+- string: name
+- int: ID
+-
++ uncover()
++ check()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>32</x><y>336</y><w>208</w><h>128</h></coordinates><panel_attributes>Map
+-
+- POIManager
+- CameraManager
+- FoWManager
+
+-
+- Vector2 worldSpaceToMapSpace(Vector3)
+- Vector3 mapSpaceToWorldSpace(Vector2)
+- MapPlayer: player
+- Image: background
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>640</x><y>456</y><w>104</w><h>40</h></coordinates><panel_attributes>/OrientationType/
+-
+World, Player, View
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>640</x><y>32</y><w>80</w><h>80</h></coordinates><panel_attributes>/&lt;&lt;Enum&gt;&gt;/
+/POIHidingType/
+-
+Invisible, 
+AmbiguousIcon, 
+FullyDisplayed
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>120</y><w>136</w><h>112</h></coordinates><panel_attributes>POIManager
+-
+- POIHidingType
+- PointOfInterest[0..n] POIs
++ PoIScale
+-
+/(For Example)/
+- Icon BlacksmithIcon
+- Icon TreasureChestIcon
+- Icon ChurchIcon
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>448</x><y>152</y><w>64</w><h>24</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;60;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>280</y><w>80</w><h>24</h></coordinates><panel_attributes>/MonoBehaviour/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>640</x><y>120</y><w>80</w><h>80</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+POIType
+-
+/(For example)/
+Blacksmith,
+Treasure Chest,
+Church
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>576</x><y>120</y><w>80</w><h>72</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>80;10;40;10;40;70;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>640</x><y>208</y><w>80</w><h>72</h></coordinates><panel_attributes>/&lt;&lt;Enum&gt;&gt;/
+/POIStatus/
+-
+Undiscovered, 
+Discovered, 
+Checked
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>448</x><y>48</y><w>208</w><h>112</h></coordinates><panel_attributes>lt=-&gt;</panel_attributes><additional_attributes>10;120;170;120;170;10;240;10</additional_attributes></element><element><id>Relation</id><coordinates><x>576</x><y>184</y><w>80</w><h>64</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>80;60;40;60;40;10;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>720</x><y>240</y><w>112</w><h>32</h></coordinates><panel_attributes>Changes how the PoI
+appears on the map
+bg=#ffaaaa</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>720</x><y>152</y><w>112</w><h>32</h></coordinates><panel_attributes>Editable in inspector
+bg=#ffaaaa</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>720</x><y>64</y><w>128</w><h>48</h></coordinates><panel_attributes>How is the PoI displayed 
+before the player dis-
+covers it?
+bg=#ffaaaa</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>232</x><y>120</y><w>104</w><h>256</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>110;10;70;10;70;300;10;300</additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>368</y><w>160</w><h>176</h></coordinates><panel_attributes>CameraManager
+-
+- Camera
+- MapPlayer
+-..
+- PositioningType
+- OrientationType
+- GameObject: CenterOfRotation
+-..
+- string inputAxisX
+- string inputAxisY
+- string inputAxisZoom
+- float panningSpeed
+- float panningSticky
+- float zoomSpeed
+- float zoomSticky
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>376</x><y>80</y><w>24</w><h>56</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>344</x><y>64</y><w>80</w><h>24</h></coordinates><panel_attributes>/MonoBehaviour/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>424</x><y>64</y><w>112</w><h>32</h></coordinates><panel_attributes>So that it can store 
+Image references
+bg=#ffaaaa</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>472</x><y>424</y><w>184</w><h>56</h></coordinates><panel_attributes>lt=-&gt;</panel_attributes><additional_attributes>10;10;130;10;130;50;210;50</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>304</x><y>0</y><w>568</w><h>304</h></coordinates><panel_attributes>Points of Interest
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>584</y><w>176</w><h>40</h></coordinates><panel_attributes>MapPlayer
+-
+- Icon</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>864</y><w>160</w><h>24</h></coordinates><panel_attributes>/MonoBehaviour/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>80</x><y>560</y><w>24</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;30</additional_attributes></element><element><id>UMLClass</id><coordinates><x>640</x><y>384</y><w>104</w><h>64</h></coordinates><panel_attributes>/PositioningType/
+-
+FixedOnPlayer
+FixedOnWorld,
+Panning
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>472</x><y>384</y><w>184</w><h>56</h></coordinates><panel_attributes>lt=-&gt;</panel_attributes><additional_attributes>10;50;130;50;130;10;210;10</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>304</x><y>336</y><w>568</w><h>224</h></coordinates><panel_attributes>Camera
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>232</x><y>368</y><w>104</w><h>24</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>110;10;10;10</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>304</x><y>600</y><w>752</w><h>400</h></coordinates><panel_attributes>Fog of War
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>632</y><w>160</w><h>176</h></coordinates><panel_attributes>FoWManager
+-
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>872</x><y>672</y><w>64</w><h>48</h></coordinates><panel_attributes>/FoWType/
+-
+Gradual
+Discrete
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>744</x><y>848</y><w>168</w><h>64</h></coordinates><panel_attributes>AbyssFoW
+-
+-
++ Uncover(FoWBrush, position)
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>552</x><y>848</y><w>160</w><h>40</h></coordinates><panel_attributes>ElasticVisionFoW
+-
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>648</x><y>672</y><w>160</w><h>104</h></coordinates><panel_attributes>&lt;&lt;Abstract&gt;&gt;
+/FogOfWar/
+-
+- image visibleArea
+- FoWType
+- FoWNonGradualUncoverType
+- bool: hidePoIs
+-..
+- float uncoverSpeed
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>672</x><y>768</y><w>24</w><h>56</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>768</x><y>768</y><w>24</w><h>96</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>800</x><y>672</y><w>88</w><h>64</h></coordinates><panel_attributes>lt=-&gt;</panel_attributes><additional_attributes>90;10;60;10;60;60;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>904</y><w>160</w><h>80</h></coordinates><panel_attributes>FoWBrush
+-
+- float brushSize
+- float softness
+- int FoWID
+-
+- Update(): send position to FoW
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>672</x><y>808</y><w>24</w><h>56</h></coordinates><panel_attributes>lt=-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>792</y><w>88</w><h>56</h></coordinates><panel_attributes>lt=-
+
+
+Not in Prototype</panel_attributes><additional_attributes>30;20;70;30</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>544</y><w>176</w><h>24</h></coordinates><panel_attributes>/MonoBehaviour/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>392</x><y>880</y><w>24</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;30</additional_attributes></element><element><id>UMLNote</id><coordinates><x>480</x><y>920</y><w>112</w><h>48</h></coordinates><panel_attributes>Attatch to anything
+thats able to lift the 
+Fog of War
+bg=#ffaaaa</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>648</x><y>632</y><w>160</w><h>24</h></coordinates><panel_attributes>/MonoBehaviour/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>648</y><w>24</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;30</additional_attributes></element><element><id>UMLClass</id><coordinates><x>872</x><y>736</y><w>160</w><h>48</h></coordinates><panel_attributes>/FoWNonGradualUncoverType/
+-
+Interactive
+UponEntry
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>800</x><y>728</y><w>88</w><h>40</h></coordinates><panel_attributes>lt=-&gt;</panel_attributes><additional_attributes>90;30;60;30;60;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>232</x><y>384</y><w>104</w><h>272</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>110;320;70;320;70;10;10;10</additional_attributes></element></diagram>

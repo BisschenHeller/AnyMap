@@ -1,0 +1,16 @@
+{
+  "name": "com.r4gnarius.anymap",
+  "version": "1.0.0",
+  "displayName": "AnyMap",
+  "description": "The AnyMap Unity package is a flexible toolset for implementing map interfaces in Unity. It was developed in the context of a Bachelor's Thesis about map-based wayfinding support techniques by Tobias Heller.",
+  "unity": "2021.1",
+  "unityRelease": "10f1",
+  "keywords": [
+    "Map",
+    "Interface",
+    "Landkarte"
+  ],
+  "author": {
+    "name": "Tobias Heller"
+  }
+}

@@ -1,0 +1,55 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>7</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>455</x><y>203</y><w>77</w><h>91</h></coordinates><panel_attributes>PointOfInterest
+-
+- POIType
+- POIStatus
+- string: name
+- int: ID
+-
++ uncover()
++ check()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>413</y><w>182</w><h>63</h></coordinates><panel_attributes>Map
+-
+- POIManager poiManager
+-
+- Vector2 worldSpaceToMapSpace(Vector3)
+- Vector3 mapSpaceToWorldSpace(Vector2)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>476</x><y>413</y><w>91</w><h>42</h></coordinates><panel_attributes>/OrientationType/
+-
+World, Player, View
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>581</x><y>98</y><w>70</w><h>70</h></coordinates><panel_attributes>/&lt;&lt;Enum&gt;&gt;/
+/POIHidingType/
+-
+Invisible, 
+AmbiguousIcon, 
+FullyDisplayed
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>301</x><y>175</y><w>119</w><h>91</h></coordinates><panel_attributes>POIManager
+-
+- PointOfInterest[0..n] POIs
+- POIHidingType
+-
+/(For Example)/
+- Icon BlacksmithIcon
+- Icon TreasureChestIcon
+- Icon ChurchIcon
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>413</x><y>203</y><w>56</w><h>21</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;60;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>126</x><y>364</y><w>70</w><h>21</h></coordinates><panel_attributes>/MonoBehaviour/</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>378</y><w>21</w><h>49</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>581</x><y>175</y><w>70</w><h>70</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+POIType
+-
+/(For example)/
+Blacksmith,
+Treasure Chest,
+Church
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>525</x><y>175</y><w>70</w><h>63</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>80;10;40;10;40;70;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>581</x><y>252</y><w>70</w><h>63</h></coordinates><panel_attributes>/&lt;&lt;Enum&gt;&gt;/
+/POIStatus/
+-
+Undiscovered, 
+Discovered, 
+Checked
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>413</x><y>112</y><w>182</w><h>98</h></coordinates><panel_attributes>lt=-&gt;</panel_attributes><additional_attributes>10;120;170;120;170;10;240;10</additional_attributes></element><element><id>Relation</id><coordinates><x>525</x><y>224</y><w>70</w><h>63</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>80;70;40;70;40;10;10;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>651</x><y>280</y><w>98</w><h>28</h></coordinates><panel_attributes>Changes how the PoI
+appears on the map
+bg=#ffaaaa</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>651</x><y>203</y><w>98</w><h>28</h></coordinates><panel_attributes>Editable in inspector
+bg=#ffaaaa</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>651</x><y>126</y><w>112</w><h>42</h></coordinates><panel_attributes>How is the PoI displayed 
+before the player dis-
+covers it?
+bg=#ffaaaa</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>245</x><y>175</y><w>70</w><h>273</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>80;10;40;10;40;370;10;370</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>287</x><y>70</y><w>490</w><h>259</h></coordinates><panel_attributes>Points of Interest
+--
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>

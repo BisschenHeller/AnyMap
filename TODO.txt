@@ -1,0 +1,5 @@
+Wind Rose to world angle ermöglichen
+
+Snap To radius muss auf symbol group hören
+
+Remaining distance?
